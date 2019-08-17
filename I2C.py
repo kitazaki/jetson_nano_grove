@@ -61,7 +61,6 @@ def get_i2c_device(address, busnum=None, i2c_interface=None, **kwargs):
     """
 #    if busnum is None:
 #        busnum = get_default_bus()
-#    return Device(address, busnum, i2c_interface, **kwargs)
     return Device(address, 1, i2c_interface, **kwargs)
 
 def require_repeated_start():
